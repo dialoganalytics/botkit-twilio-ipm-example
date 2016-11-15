@@ -1,0 +1,17 @@
+{
+  "name": "botkit-twilio-ipm-example",
+  "version": "1.0.0",
+  "description": "An example Twilio IP Messaging node.js chatbot built with Botkit and integrated with Dialog Analytics",
+  "main": "bot.js",
+  "scripts": {
+    "debug": "node debug bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dialog Analytics",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "^0.4.1",
+    "dialog-api": "0.0.3",
+    "dotenv": "^2.0.0"
+  }
+}

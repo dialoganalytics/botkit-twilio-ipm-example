@@ -26,6 +26,8 @@ DIALOG_BOT_ID=...
 
 __Local development:__ When developping locally, use a service like https://ngrok.com to expose a server running on your machine.
 
+__Local development:__ When developping locally, use a service like https://ngrok.com to expose a server running on your machine. You'll need to update your [Twilio app's webhook](https://www.twilio.com/console/chat/services) and set it to something like `https://075301e2.ngrok.io/twilio/receive`.
+
 ```bash
 $ ngrok http 3000
 ```
@@ -33,10 +35,12 @@ $ ngrok http 3000
 Start the bot:
 
 ```bash
-$ node bot.js https://somesubdomain.ngrok.io
+$ node bot.js https://075301e2.ngrok.io
 ```
 
-Open the Messenger application, find your bot and exchange a few messages. Messages will be sent to Dialog's API.
+If you don't already have an application to interact with Twilio's API, clone this demo client application: [https://github.com/twilio/twilio-chat-demo-js].
+
+Exchange a few messages with the bot. Messages will be sent to Dialog's API.
 
 ## Go further
 

@@ -1,3 +1,5 @@
+require('dotenv').load();
+
 var Botkit = require('botkit');
 
 var Dialog = require('dialog-api/lib/botkit/twilioipm');
